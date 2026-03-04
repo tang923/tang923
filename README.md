@@ -106,11 +106,11 @@ noise schedule experiments
 <br/>
 
 <a href="https://github.com/tang923">
-  <img src="https://github-readme-stats.vercel.app/api?username=tang923&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0a0a0f&icon_color=00ffc8&title_color=00ffc8&text_color=888888&ring_color=00ffc8&cache_seconds=86400" height="165"/>
+  <img src="https://github-readme-stats-nu-one-14.vercel.app/api?username=tang923&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0a0a0f&icon_color=00ffc8&title_color=00ffc8&text_color=888888&ring_color=00ffc8&cache_seconds=86400" height="165"/>
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/tang923">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tang923&layout=compact&hide_border=true&bg_color=0a0a0f&title_color=00ffc8&text_color=888888&cache_seconds=86400" height="165"/>
+  <img src="https://github-readme-stats-nu-one-14.vercel.app/api/top-langs/?username=tang923&layout=compact&hide_border=true&bg_color=0a0a0f&title_color=00ffc8&text_color=888888&cache_seconds=86400" height="165"/>
 </a>
 
 <br/><br/>
