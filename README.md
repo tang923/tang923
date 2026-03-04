@@ -1,71 +1,79 @@
-<h1 align="center">Hi 👋 I'm Yuyao Tang</h1>
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Winking%20Face.png" alt="Winking Face" width="35" height="35" /> Hey there, I'm Yuyao
+</h1>
 
 <p align="center">
-  🎓 Duke University — Electrical & Computer Engineering<br/>
-  🤖 Machine Learning · LLM Systems · RAG · Algorithms
+  <em>Duke ECE Master's Student | ML Builder | Paper-to-Code Translator</em>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=18&duration=2500&pause=600&center=true&vCenter=true&width=520&lines=Machine+Learning;LLM+Systems;RAG+Research;Diffusion+Models;Efficient+AI+Systems;Always+be+shipping+%F0%9F%9A%80" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&duration=2500&pause=1000&color=36BCF7&center=true&vCenter=true&width=550&lines=Training+Mini+LLMs...;Wrestling+with+CUDA+OOM+Errors...;Building+RAG+%26+Agentic+Workflows...;Always+Be+Shipping+%F0%9F%9A%80" />
 </p>
 
 ---
 
-## 🧠 Research Interests
+## 🚀 What I'm currently hacking on
 
-- Large Language Models (Alignment / Preference Optimization)
-- Retrieval-Augmented Generation (RAG) + Agentic Workflows
-- Diffusion Models (EDM / DDIM) + Sampling Acceleration
-- Efficient AI Systems (training/inference efficiency)
+Instead of just reading papers, I prefer building them out. My current focus revolves around:
+- **LLM Alignment & Training:** Fine-tuning, DPO, and building end-to-end training pipelines for small models.
+- **Agentic RAG:** Moving beyond vector search into schema-aware parsing and reasoning agents.
+- **Diffusion Models:** Playing with sampling acceleration (EDM/DDIM) and noise schedules.
 
----
-
-## 🧰 Toolbox (I actually use)
+## 🛠️ Tech Stack
 
 <p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Transformers-000000?style=for-the-badge&logo=huggingface&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge"/>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,pytorch,linux,bash,docker,git&theme=dark" />
+  </a>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white"/>
   <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
 </p>
 
 ---
 
-## 📌 Selected Work
+## 📌 Featured Quests
 
-- **AlignRAG** — domain RAG for arXiv alignment papers  
-  *Hybrid retrieval · schema-aware parsing · agentic reasoning · eval metrics*
-
-- **Mini LLM Training** — trained a small decoder-only model end-to-end  
-  *Transformer · RoPE · FlashAttn · LoRA/DPO · training pipeline*
-
-- **Diffusion Experiments** — sampling & noise schedule studies  
-  *EDM preconditioning · DDIM · acceleration tricks*
+> **[AlignRAG](#)**
+> Domain-specific RAG built for arXiv alignment papers. Fuses hybrid retrieval with agentic reasoning.
+> 
+> **[Mini LLM Training Pipeline](#)**
+> Trained a small decoder-only model end-to-end. Handled everything from RoPE and FlashAttn to LoRA/DPO.
+> 
+> **[Diffusion Experiments](#)**
+> Deep dives into EDM preconditioning and DDIM to squeeze out faster sampling times.
 
 ---
 
-## 📊 Stats (the fun part)
+## 📊 The Daily Grind 
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/tang923/tang923/output/github-contribution-grid-snake.svg">
+</picture>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=tang923&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true" height="165"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tang923&layout=compact&theme=tokyonight" height="165"/>
 </p>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=tang923&theme=tokyonight&hide_border=true" height="165"/>
-</p>
-
 ---
 
-## 🧩 Fun
+## 👾 /whoami
 
 ```python
-class YuyaoTang:
-    education = "Duke ECE"
-    focus = ["LLM", "RAG", "Diffusion", "Efficient Systems"]
-    motto = "make it work, make it fast, make it clean"
+import user
 
-    def today(self):
-        return "turning papers into runnable code"
+me = user.Yuyao()
+me.location = "Durham, NC 🌲"
+me.status = "Make it work, make it fast, make it clean."
+me.side_quests = [
+    "Hunting for Nike Foamposites 👟",
+    "East Coast road trips 🚗", 
+    "Waiting in line for EGR 505"
+]
+
+me.execute()
