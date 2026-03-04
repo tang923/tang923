@@ -1,0 +1,159 @@
+<svg fill="none" viewBox="0 0 800 280" width="800" height="280" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        .container {
+          width: 100%;
+          height: 280px;
+          background: linear-gradient(135deg, #f8f9ff 0%, #eef1ff 40%, #f0f7ff 70%, #f8f5ff 100%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          overflow: hidden;
+          font-family: monospace;
+        }
+
+        /* subtle moving dot grid */
+        .grid {
+          position: absolute;
+          top: 0; left: 0;
+          width: 200%; height: 200%;
+          background-image:
+            radial-gradient(circle, rgba(99,102,241,0.08) 1px, transparent 1px);
+          background-size: 32px 32px;
+          animation: gridScroll 25s linear infinite;
+        }
+        @keyframes gridScroll {
+          0% { transform: translate(0, 0); }
+          100% { transform: translate(-32px, -32px); }
+        }
+
+        /* floating colored orbs */
+        .orb {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(40px);
+          animation: orbFloat 8s ease-in-out infinite;
+        }
+        .orb1 {
+          width: 200px; height: 200px;
+          background: rgba(99,102,241,0.12);
+          top: 10%; left: 15%;
+          animation-duration: 8s;
+        }
+        .orb2 {
+          width: 180px; height: 180px;
+          background: rgba(236,72,153,0.10);
+          top: 30%; right: 10%;
+          animation-duration: 10s;
+          animation-delay: -3s;
+        }
+        .orb3 {
+          width: 150px; height: 150px;
+          background: rgba(34,211,238,0.10);
+          bottom: 5%; left: 40%;
+          animation-duration: 9s;
+          animation-delay: -5s;
+        }
+        @keyframes orbFloat {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          33% { transform: translate(15px, -10px) scale(1.05); }
+          66% { transform: translate(-10px, 8px) scale(0.95); }
+        }
+
+        /* sparkle particles */
+        .spark {
+          position: absolute;
+          width: 4px; height: 4px;
+          border-radius: 50%;
+          opacity: 0;
+          animation: sparkle 4s ease-in-out infinite;
+        }
+        .spark:nth-child(5) { left: 12%; top: 25%; background: #6366f1; animation-delay: 0s; }
+        .spark:nth-child(6) { left: 30%; top: 65%; background: #ec4899; animation-delay: 0.8s; }
+        .spark:nth-child(7) { left: 50%; top: 15%; background: #22d3ee; animation-delay: 1.6s; }
+        .spark:nth-child(8) { left: 70%; top: 55%; background: #6366f1; animation-delay: 2.4s; }
+        .spark:nth-child(9) { left: 88%; top: 30%; background: #ec4899; animation-delay: 3.2s; }
+        .spark:nth-child(10) { left: 22%; top: 80%; background: #22d3ee; animation-delay: 1.2s; }
+        .spark:nth-child(11) { left: 78%; top: 78%; background: #6366f1; animation-delay: 2s; }
+        .spark:nth-child(12) { left: 45%; top: 40%; background: #ec4899; animation-delay: 0.4s; }
+        @keyframes sparkle {
+          0%, 100% { opacity: 0; transform: scale(0.5); }
+          50% { opacity: 0.7; transform: scale(1.2); }
+        }
+
+        .title {
+          font-size: 2.8em; font-weight: bold;
+          color: #1e1b4b;
+          position: relative; z-index: 2;
+          text-shadow: 0 1px 2px rgba(99,102,241,0.1);
+          animation: titleShimmer 4s ease-in-out infinite alternate;
+        }
+        @keyframes titleShimmer {
+          0% { color: #1e1b4b; }
+          50% { color: #4338ca; }
+          100% { color: #1e1b4b; }
+        }
+
+        .subtitle {
+          font-size: 0.95em;
+          color: #6366f1;
+          margin-top: 14px;
+          position: relative; z-index: 2;
+        }
+        .cursor {
+          display: inline-block; width: 7px; height: 1em;
+          background: #6366f1; margin-left: 4px; vertical-align: text-bottom;
+          animation: blink 1s step-end infinite;
+        }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+        .accent-line {
+          position: absolute; bottom: 0; left: 0; width: 100%; height: 2px;
+          background: linear-gradient(90deg, transparent, #6366f1, #ec4899, #22d3ee, transparent);
+          background-size: 200% 100%;
+          animation: lineFlow 4s linear infinite;
+        }
+        @keyframes lineFlow {
+          0% { background-position: -200% 0; }
+          100% { background-position: 200% 0; }
+        }
+
+        .corner {
+          position: absolute; width: 18px; height: 18px;
+          border-color: #6366f1; border-style: solid; opacity: 0.2; z-index: 2;
+        }
+        .corner.tl { top: 16px; left: 16px; border-width: 2px 0 0 2px; }
+        .corner.tr { top: 16px; right: 16px; border-width: 2px 2px 0 0; }
+        .corner.bl { bottom: 16px; left: 16px; border-width: 0 0 2px 2px; }
+        .corner.br { bottom: 16px; right: 16px; border-width: 0 2px 2px 0; }
+      </style>
+
+      <div class="container">
+        <div class="grid"></div>
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+        <div class="spark"></div>
+        <div class="spark"></div>
+        <div class="spark"></div>
+        <div class="spark"></div>
+        <div class="spark"></div>
+        <div class="spark"></div>
+        <div class="spark"></div>
+        <div class="spark"></div>
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+        <div class="title">YUYAO TANG</div>
+        <div class="subtitle">&gt; M.S. @ Duke ECE · ML Track <span class="cursor"></span></div>
+        <div class="accent-line"></div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
