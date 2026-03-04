@@ -23,9 +23,9 @@ Python | PyTorch | Transformers | FAISS | CUDA
 
 ## 📊 GitHub Stats
 
-![stats](https://github-readme-stats.vercel.app/api?username=tang923&show_icons=true&theme=tokyonight)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tang923&show_icons=true&theme=tokyonight&count_private=true)
 
-![langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tang923&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tang923&layout=compact&theme=tokyonight)
 
 ---
 
