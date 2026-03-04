@@ -1,12 +1,14 @@
-name: Generate Snake
+name: Generate Snake Neon
 
 on:
   schedule:
     - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
   generate:
@@ -14,13 +16,18 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: generate matrix snake
-        uses: Platane/snk/svg-only@v3
+      - name: generate neon snake (svg + gif)
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=#22c55e&color_dots=#ebedf0,#bbf7d0,#86efac,#4ade80,#22c55e
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#00ff9c&color_dots=#161b22,#003b2e,#006644,#00ff9c,#00ff9c
+            # Light: neon gradient snake + soft glow grid
+            dist/github-snake.svg?color_snake=#00f5ff&color_dots=#ebedf0,#dbeafe,#a5b4fc,#818cf8,#22d3ee
+            dist/github-snake.gif?color_snake=#00f5ff&color_dots=#ebedf0,#dbeafe,#a5b4fc,#818cf8,#22d3ee
+
+            # Dark: neon gradient snake + glowing grid on night background
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#00ff9c&color_dots=#0b1020,#111a33,#1b2a57,#3b82f6,#00ff9c
+            dist/github-snake-dark.gif?palette=github-dark&color_snake=#00ff9c&color_dots=#0b1020,#111a33,#1b2a57,#3b82f6,#00ff9c
 
       - name: push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
