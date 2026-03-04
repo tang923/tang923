@@ -1,101 +1,167 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6B6B,50:4ECDC4,100:45B7D1&height=200&section=header&text=Yuyao%20Tang&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=I%20break%20things%20until%20they%20work%20better&descSize=16&descAlignY=55" width="100%"/>
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=14&duration=2000&pause=800&color=4ECDC4&center=true&vCenter=true&repeat=true&width=380&height=25&lines=grad+student+by+day+%7C+gpu+wrangler+by+night;make+it+work+%E2%86%92+make+it+fast+%E2%86%92+ship+it;currently+turning+papers+into+code+at+2am" />
-
-</div>
-
-<br/>
-
-> **`tang923@duke:~$`** whoami
-> 
-> 🎓 Duke University · M.S. Electrical & Computer Engineering
-> 
-> 🔬 LLM Alignment · RAG Systems · Diffusion Models · Efficient Inference
-
-<br/>
-
----
-
-<details open>
-<summary><b>🔬 what i actually work on</b></summary>
-<br/>
-
-| area | what i'm doing | status |
-|:-----|:--------------|:------:|
-| **LLM alignment** | preference optimization, RLHF variants | 🔥 |
-| **RAG systems** | hybrid retrieval, agentic workflows | 🔥 |
-| **diffusion models** | EDM / DDIM, sampling acceleration | 🧪 |
-| **efficient inference** | making models go brrr | ♻️ |
-
-</details>
-
----
-
-### ⚡ things i've built
-
-🔗 **[AlignRAG](https://github.com/tang923/AlignRAG)** — fed it every alignment paper on arxiv, now it retrieves & reasons over them  
-&nbsp;&nbsp;&nbsp;&nbsp;`hybrid retrieval` `schema-aware parsing` `agentic reasoning` `eval metrics`
-
-🔗 **Mini LLM** — trained a decoder-only transformer from scratch because why not  
-&nbsp;&nbsp;&nbsp;&nbsp;`RoPE` `FlashAttention` `LoRA` `DPO` `the whole pipeline`
-
-🔗 **Diffusion Playground** — noise schedule go brrrr  
-&nbsp;&nbsp;&nbsp;&nbsp;`EDM preconditioning` `DDIM` `acceleration tricks`
-
----
-
-### 🛠️ daily drivers
-
-<p>
-  <img src="https://skillicons.dev/icons?i=python,pytorch,docker,linux,git,vscode&theme=dark" />
-</p>
-
-`transformers` · `FAISS` · `CUDA` · `wandb` · `tmux (the real MVP)`
-
----
-
-### 📊 proof i actually commit code
-
-<div align="center">
-
+<!-- ═══════════════ CUSTOM ANIMATED HEADER ═══════════════ -->
 <a href="https://github.com/tang923">
-  <img src="https://github-readme-stats.vercel.app/api?username=tang923&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&bg_color=0d1117&icon_color=4ECDC4&title_color=FF6B6B&text_color=c9d1d9&cache_seconds=86400" height="160"/>
-</a>
-<a href="https://github.com/tang923">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tang923&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=FF6B6B&text_color=c9d1d9&cache_seconds=86400" height="160"/>
+  <img src="header.svg" alt="Yuyao Tang" width="100%"/>
 </a>
 
-<br/><br/>
+<br/>
 
-<img src="https://streak-stats.demolab.com?user=tang923&theme=github-dark-blue&hide_border=true&background=0D1117&ring=4ECDC4&fire=FF6B6B&currStreakLabel=4ECDC4" height="160"/>
+<!-- ═══════════════ ANIMATED WAVE DIVIDER ═══════════════ -->
+<img src="divider.svg" width="100%"/>
 
 </div>
 
----
+<br/>
 
-### 🏆 trophies
+```
+ ╭──────────────────────────────────────────────╮
+ │  $ cat /etc/yuyao.conf                       │
+ │                                              │
+ │  role    = grad_student                      │
+ │  base    = duke_ece                          │
+ │  focus   = [llm, rag, diffusion, efficiency] │
+ │  status  = turning papers into code          │
+ │  uptime  = since 2024                        │
+ ╰──────────────────────────────────────────────╯
+```
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=tang923&theme=onestar&no-frame=true&column=4&margin-w=15&margin-h=15" />
+<img src="divider.svg" width="100%"/>
 </div>
 
----
+<br/>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔬 research
+
+**LLM Alignment**  
+preference optimization · RLHF variants · reward modeling
+
+**RAG Systems**  
+hybrid retrieval · agentic workflows · schema-aware parsing
+
+**Diffusion Models**  
+EDM / DDIM · sampling acceleration · noise schedules
+
+**Efficient Inference**  
+making models go brrr
+
+</td>
+<td width="50%" valign="top">
+
+### ⚡ builds
+
+**[AlignRAG](https://github.com/tang923/AlignRAG)**  
+domain RAG over arxiv alignment papers  
+`retrieval` `agentic reasoning` `eval`
+
+**Mini LLM**  
+decoder-only transformer from scratch  
+`RoPE` `FlashAttn` `LoRA` `DPO`
+
+**Diffusion Playground**  
+noise schedule experiments  
+`EDM` `DDIM` `acceleration`
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+<img src="divider.svg" width="100%"/>
+</div>
+
+<br/>
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=tang923&style=flat-square&color=4ECDC4&label=profile+views" />
+### 🛠️ stack
+
+<br/>
+
+<img src="https://skillicons.dev/icons?i=python,pytorch,docker,linux,git,vscode&theme=dark" />
 
 <br/><br/>
 
-<a href="https://linkedin.com/in/yuyaotang"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/></a>&nbsp;
-<a href="mailto:yuyao.tang@duke.edu"><img src="https://img.shields.io/badge/-Email-EA4335?style=flat-square&logo=gmail&logoColor=white"/></a>
-
-<br/><br/>
-
-*if you read this far, you should check out [AlignRAG](https://github.com/tang923/AlignRAG)* 🚀
+`transformers` · `FAISS` · `CUDA` · `wandb` · `tmux`
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6B6B,50:4ECDC4,100:45B7D1&height=100&section=footer" width="100%"/>
+<br/>
+
+<div align="center">
+<img src="divider.svg" width="100%"/>
+</div>
+
+<br/>
+
+<div align="center">
+
+### 📊 stats
+
+<br/>
+
+<a href="https://github.com/tang923">
+  <img src="https://github-readme-stats.vercel.app/api?username=tang923&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0a0a0f&icon_color=00ffc8&title_color=00ffc8&text_color=888888&ring_color=00ffc8&cache_seconds=86400" height="165"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/tang923">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tang923&layout=compact&hide_border=true&bg_color=0a0a0f&title_color=00ffc8&text_color=888888&cache_seconds=86400" height="165"/>
+</a>
+
+<br/><br/>
+
+<img src="https://streak-stats.demolab.com?user=tang923&hide_border=true&background=0A0A0F&ring=00FFC8&fire=FF6B6B&currStreakLabel=00FFC8&sideLabels=888888&currStreakNum=E0E0E0&sideNums=888888&dates=444444" height="165"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+<img src="divider.svg" width="100%"/>
+</div>
+
+<br/>
+
+<!-- ═══════════════ SNAKE ANIMATION ═══════════════ -->
+<!-- needs the GitHub Action (snake.yml) to generate -->
+
+<div align="center">
+
+### 🐍 contributions
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-snake.svg" />
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/tang923/tang923/output/github-snake-dark.svg" />
+</picture>
+
+</div>
+
+<br/>
+
+<div align="center">
+<img src="divider.svg" width="100%"/>
+</div>
+
+<br/>
+
+<div align="center">
+
+<a href="https://linkedin.com/in/yuyaotang"><img src="https://img.shields.io/badge/-LinkedIn-0A0A0F?style=flat-square&logo=linkedin&logoColor=00ffc8"/></a>&nbsp;&nbsp;
+<a href="mailto:yuyao.tang@duke.edu"><img src="https://img.shields.io/badge/-Email-0A0A0F?style=flat-square&logo=gmail&logoColor=00ffc8"/></a>&nbsp;&nbsp;
+<img src="https://komarev.com/ghpvc/?username=tang923&style=flat-square&color=00ffc8&label=visitors&abbreviated=true" />
+
+<br/><br/>
+
+```
+> EOF
+```
+
+</div>
