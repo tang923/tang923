@@ -1,7 +1,6 @@
 <div align="center">
 
 <img src="./header.svg" width="100%" alt="header" />
-# Yuyao Tang (唐雨尧)
 
 <p align="center" style="max-width: 650px; font-size: 16px; line-height: 1.6;">
   👋 <b>Hi, I'm Yuyao Tang (唐雨尧)</b> <br>
