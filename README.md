@@ -8,11 +8,13 @@
 
 <br/>
 
-Hey, I'm **Yuyao Tang** — a first-year M.S. student in Electrical & Computer Engineering at Duke University, on the Machine Learning track.
+Hey, I'm **Yuyao Tang**.
 
-I'm into building things at the intersection of language models and systems — right now that means LLM alignment, retrieval-augmented generation, and figuring out how to make inference faster. Before that I spent time poking at diffusion models and sampling methods.
+M.S. student in Electrical & Computer Engineering at Duke University.  
+I spend a lot of time reading ML papers and trying to make them actually run.
 
-Most of my days look like: read a paper, get confused, re-read it, write some code, realize the paper left out a detail, debug for 3 hours, and eventually get something running. Repeat.
+Most of the time I'm working on **LLMs, alignment, and retrieval systems**.  
+Sometimes it works. Sometimes it turns into a 4-hour debugging session.
 
 <br/>
 
@@ -20,16 +22,19 @@ Most of my days look like: read a paper, get confused, re-read it, write some co
 
 <br/>
 
-### ⚡ what i've been building
+### ⚡ things I've built
 
-**[AlignRAG](https://github.com/tang923/AlignRAG)** — domain RAG over arxiv alignment papers  
-&nbsp;&nbsp;&nbsp;&nbsp;`hybrid retrieval` `schema-aware parsing` `agentic reasoning` `eval metrics`
+**[AlignRAG](https://github.com/tang923/AlignRAG)**  
+A small RAG system for exploring alignment papers on arXiv  
+`hybrid retrieval` · `schema parsing` · `agent reasoning` · `evaluation`
 
-**Mini LLM** — trained a decoder-only transformer from scratch  
-&nbsp;&nbsp;&nbsp;&nbsp;`RoPE` `FlashAttention` `LoRA` `DPO`
+**Mini LLM**  
+Trained a decoder-only transformer from scratch  
+`RoPE` · `FlashAttention` · `LoRA` · `DPO`
 
-**Diffusion Playground** — noise schedule & sampling experiments  
-&nbsp;&nbsp;&nbsp;&nbsp;`EDM preconditioning` `DDIM` `acceleration`
+**Diffusion Playground**  
+Experiments with diffusion sampling and noise schedules  
+`EDM` · `DDIM` · `sampling acceleration`
 
 <br/>
 
@@ -39,7 +44,7 @@ Most of my days look like: read a paper, get confused, re-read it, write some co
 
 <div align="center">
 
-### 🛠️ stack
+### 🛠️ tools I use
 
 <br/>
 
