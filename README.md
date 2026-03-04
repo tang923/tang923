@@ -1,19 +1,8 @@
 <div align="center">
 
-<h1>Yuyao Tang</h1>
+<img src="header.svg" width="100%"/>
 
-<h3>
-  LLM &nbsp;•&nbsp; RAG &nbsp;•&nbsp; AGENT
-</h3>
-
-<br>
-
-<p align="center" style="max-width: 600px; font-size: 16px; line-height: 1.6;">
-  Master's student in ECE (Machine Learning Track) at Duke University. <br>
-  Passionate about turning complex papers into runnable code. My current focus revolves around fine-tuning large language models, building robust retrieval-augmented generation pipelines, and designing autonomous agentic workflows. Always building, always shipping.
-</p>
-
-<br>
+<br><br>
 
 <a href="https://www.linkedin.com/in/yuyaotang1">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
@@ -36,13 +25,6 @@
 
 ---
 
-## 🚀 What I'm currently hacking on
-
-Instead of just reading papers, I prefer building them out. My current focus revolves around:
-- **LLM Alignment & Training:** Fine-tuning, DPO, and building end-to-end training pipelines for small models.
-- **Agentic RAG:** Moving beyond vector search into schema-aware parsing and reasoning agents.
-- **Diffusion Models:** Playing with sampling acceleration (EDM/DDIM) and noise schedules.
-
 ## 🛠️ Tech Stack
 
 <p>
@@ -58,19 +40,6 @@ Instead of just reading papers, I prefer building them out. My current focus rev
 
 ---
 
-## 📌 Featured Quests
-
-> **[AlignRAG](#)**
-> Domain-specific RAG built for arXiv alignment papers. Fuses hybrid retrieval with agentic reasoning.
-> 
-> **[Mini LLM Training Pipeline](#)**
-> Trained a small decoder-only model end-to-end. Handled everything from RoPE and FlashAttn to LoRA/DPO.
-> 
-> **[Diffusion Experiments](#)**
-> Deep dives into EDM preconditioning and DDIM to squeeze out faster sampling times.
-
----
-
 ## 👾 /whoami
 
 ```python
@@ -79,10 +48,16 @@ import user
 me = user.Yuyao()
 me.location = "Durham, NC 🌲"
 me.status = "Make it work, make it fast, make it clean."
+
+# 🎯 Open to opportunities!
+me.seeking = {
+    "Summer 2026": "SWE / ML Internship",
+    "Spring 2027": "New Grad Full-Time Role"
+}
+
 me.side_quests = [
     "Hunting for Nike Foamposites 👟",
-    "East Coast road trips 🚗", 
-    "Waiting in line for EGR 505"
+    "Road trips & exploring 🌍"
 ]
 
 me.execute()
