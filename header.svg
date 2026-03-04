@@ -61,7 +61,7 @@
       <rect x="0" y="0" width="1200" height="320" fill="black"/>
       <rect x="0" y="0" width="0" height="320" fill="white">
         <animate attributeName="width"
-                 values="0;760;760;0"
+                 values="0;900;900;0"
                  keyTimes="0;0.45;0.85;1"
                  dur="7.2s"
                  repeatCount="indefinite"/>
@@ -72,7 +72,7 @@
       <rect x="0" y="0" width="1200" height="320" fill="black"/>
       <rect x="0" y="0" width="0" height="320" fill="white">
         <animate attributeName="width"
-                 values="0;640;640;0"
+                 values="0;900;900;0"
                  keyTimes="0;0.55;0.9;1"
                  dur="7.2s"
                  repeatCount="indefinite"/>
@@ -141,13 +141,6 @@
       M.S. @ Duke ECE • ML Track
     </text>
   </g>
-
-  <text x="885" y="150" font-size="30"
-        font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
-        fill="#6366f1" opacity="0.9">
-    |
-    <animate attributeName="opacity" values="0;1;0" dur="0.9s" repeatCount="indefinite"/>
-  </text>
 
   <g opacity="0.55">
     <circle cx="220" cy="88" r="2.1" fill="#6366f1">
