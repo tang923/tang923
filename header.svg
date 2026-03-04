@@ -1,159 +1,166 @@
-<svg fill="none" viewBox="0 0 800 280" width="800" height="280" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef2ff">
+        <animate attributeName="stop-color" dur="10s" repeatCount="indefinite"
+                 values="#eef2ff;#e0e7ff;#ddd6fe;#eef2ff"/>
+      </stop>
+      <stop offset="55%" stop-color="#ddd6fe">
+        <animate attributeName="stop-color" dur="10s" repeatCount="indefinite"
+                 values="#ddd6fe;#c7d2fe;#e0e7ff;#ddd6fe"/>
+      </stop>
+      <stop offset="100%" stop-color="#f5f3ff">
+        <animate attributeName="stop-color" dur="10s" repeatCount="indefinite"
+                 values="#f5f3ff;#ede9fe;#e0e7ff;#f5f3ff"/>
+      </stop>
+    </linearGradient>
 
-        .container {
-          width: 100%;
-          height: 280px;
-          background: linear-gradient(135deg, #f8f9ff 0%, #eef1ff 40%, #f0f7ff 70%, #f8f5ff 100%);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-          overflow: hidden;
-          font-family: monospace;
-        }
+    <radialGradient id="blob" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#a5b4fc" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#818cf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
 
-        /* subtle moving dot grid */
-        .grid {
-          position: absolute;
-          top: 0; left: 0;
-          width: 200%; height: 200%;
-          background-image:
-            radial-gradient(circle, rgba(99,102,241,0.08) 1px, transparent 1px);
-          background-size: 32px 32px;
-          animation: gridScroll 25s linear infinite;
-        }
-        @keyframes gridScroll {
-          0% { transform: translate(0, 0); }
-          100% { transform: translate(-32px, -32px); }
-        }
+    <linearGradient id="shimmerGrad" x1="-20%" y1="0%" x2="120%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
 
-        /* floating colored orbs */
-        .orb {
-          position: absolute;
-          border-radius: 50%;
-          filter: blur(40px);
-          animation: orbFloat 8s ease-in-out infinite;
-        }
-        .orb1 {
-          width: 200px; height: 200px;
-          background: rgba(99,102,241,0.12);
-          top: 10%; left: 15%;
-          animation-duration: 8s;
-        }
-        .orb2 {
-          width: 180px; height: 180px;
-          background: rgba(236,72,153,0.10);
-          top: 30%; right: 10%;
-          animation-duration: 10s;
-          animation-delay: -3s;
-        }
-        .orb3 {
-          width: 150px; height: 150px;
-          background: rgba(34,211,238,0.10);
-          bottom: 5%; left: 40%;
-          animation-duration: 9s;
-          animation-delay: -5s;
-        }
-        @keyframes orbFloat {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          33% { transform: translate(15px, -10px) scale(1.05); }
-          66% { transform: translate(-10px, 8px) scale(0.95); }
-        }
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.05"/>
+      </feComponentTransfer>
+    </filter>
 
-        /* sparkle particles */
-        .spark {
-          position: absolute;
-          width: 4px; height: 4px;
-          border-radius: 50%;
-          opacity: 0;
-          animation: sparkle 4s ease-in-out infinite;
-        }
-        .spark:nth-child(5) { left: 12%; top: 25%; background: #6366f1; animation-delay: 0s; }
-        .spark:nth-child(6) { left: 30%; top: 65%; background: #ec4899; animation-delay: 0.8s; }
-        .spark:nth-child(7) { left: 50%; top: 15%; background: #22d3ee; animation-delay: 1.6s; }
-        .spark:nth-child(8) { left: 70%; top: 55%; background: #6366f1; animation-delay: 2.4s; }
-        .spark:nth-child(9) { left: 88%; top: 30%; background: #ec4899; animation-delay: 3.2s; }
-        .spark:nth-child(10) { left: 22%; top: 80%; background: #22d3ee; animation-delay: 1.2s; }
-        .spark:nth-child(11) { left: 78%; top: 78%; background: #6366f1; animation-delay: 2s; }
-        .spark:nth-child(12) { left: 45%; top: 40%; background: #ec4899; animation-delay: 0.4s; }
-        @keyframes sparkle {
-          0%, 100% { opacity: 0; transform: scale(0.5); }
-          50% { opacity: 0.7; transform: scale(1.2); }
-        }
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-        .title {
-          font-size: 2.8em; font-weight: bold;
-          color: #1e1b4b;
-          position: relative; z-index: 2;
-          text-shadow: 0 1px 2px rgba(99,102,241,0.1);
-          animation: titleShimmer 4s ease-in-out infinite alternate;
-        }
-        @keyframes titleShimmer {
-          0% { color: #1e1b4b; }
-          50% { color: #4338ca; }
-          100% { color: #1e1b4b; }
-        }
+    <filter id="meteorGlow">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-        .subtitle {
-          font-size: 0.95em;
-          color: #6366f1;
-          margin-top: 14px;
-          position: relative; z-index: 2;
-        }
-        .cursor {
-          display: inline-block; width: 7px; height: 1em;
-          background: #6366f1; margin-left: 4px; vertical-align: text-bottom;
-          animation: blink 1s step-end infinite;
-        }
-        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    <linearGradient id="meteorStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#c7d2fe" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
 
-        .accent-line {
-          position: absolute; bottom: 0; left: 0; width: 100%; height: 2px;
-          background: linear-gradient(90deg, transparent, #6366f1, #ec4899, #22d3ee, transparent);
-          background-size: 200% 100%;
-          animation: lineFlow 4s linear infinite;
-        }
-        @keyframes lineFlow {
-          0% { background-position: -200% 0; }
-          100% { background-position: 200% 0; }
-        }
+    <mask id="typeMaskTitle">
+      <rect x="0" y="0" width="1200" height="320" fill="black"/>
+      <rect x="0" y="0" width="0" height="320" fill="white">
+        <animate attributeName="width"
+                 values="0;760;760;0"
+                 keyTimes="0;0.45;0.85;1"
+                 dur="7.2s"
+                 repeatCount="indefinite"/>
+      </rect>
+    </mask>
 
-        .corner {
-          position: absolute; width: 18px; height: 18px;
-          border-color: #6366f1; border-style: solid; opacity: 0.2; z-index: 2;
-        }
-        .corner.tl { top: 16px; left: 16px; border-width: 2px 0 0 2px; }
-        .corner.tr { top: 16px; right: 16px; border-width: 2px 2px 0 0; }
-        .corner.bl { bottom: 16px; left: 16px; border-width: 0 0 2px 2px; }
-        .corner.br { bottom: 16px; right: 16px; border-width: 0 2px 2px 0; }
-      </style>
+    <mask id="typeMaskSub">
+      <rect x="0" y="0" width="1200" height="320" fill="black"/>
+      <rect x="0" y="0" width="0" height="320" fill="white">
+        <animate attributeName="width"
+                 values="0;640;640;0"
+                 keyTimes="0;0.55;0.9;1"
+                 dur="7.2s"
+                 repeatCount="indefinite"/>
+      </rect>
+    </mask>
+  </defs>
 
-      <div class="container">
-        <div class="grid"></div>
-        <div class="orb orb1"></div>
-        <div class="orb orb2"></div>
-        <div class="orb orb3"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="corner tl"></div>
-        <div class="corner tr"></div>
-        <div class="corner bl"></div>
-        <div class="corner br"></div>
-        <div class="title">YUYAO TANG</div>
-        <div class="subtitle">&gt; M.S. @ Duke ECE · ML Track <span class="cursor"></span></div>
-        <div class="accent-line"></div>
-      </div>
-    </div>
-  </foreignObject>
+  <rect width="1200" height="320" fill="url(#bgGradient)"/>
+  <rect width="1200" height="320" filter="url(#noise)" opacity="0.28"/>
+
+  <circle cx="320" cy="120" r="190" fill="url(#blob)" opacity="0.95">
+    <animate attributeName="cx" dur="11s" repeatCount="indefinite" values="260;980;260"/>
+    <animate attributeName="cy" dur="11s" repeatCount="indefinite" values="110;210;110"/>
+  </circle>
+
+  <rect x="30" y="30" width="1140" height="260" rx="22"
+        fill="#ffffff" opacity="0.16"
+        stroke="#c7d2fe" stroke-width="2" />
+
+  <rect x="44" y="44" width="1112" height="232" rx="18"
+        fill="none" stroke="#a5b4fc" stroke-width="1" opacity="0.35"/>
+
+  <rect x="-420" y="0" width="420" height="320" fill="url(#shimmerGrad)" opacity="0.65">
+    <animate attributeName="x" dur="6s" repeatCount="indefinite" values="-420;1200"/>
+  </rect>
+
+  <g filter="url(#meteorGlow)" opacity="0.85">
+    <g>
+      <line x1="-200" y1="40" x2="-80" y2="-40" stroke="url(#meteorStroke)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-220" y1="60" x2="-90" y2="-35" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.2" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="translate"
+                        values="0 0; 1600 360"
+                        dur="5.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.6;1" dur="5.6s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <line x1="-240" y1="120" x2="-115" y2="30" stroke="url(#meteorStroke)" stroke-width="2.6" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="translate"
+                        values="0 0; 1600 360"
+                        dur="6.8s" begin="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.12;0.62;1" dur="6.8s" begin="1.2s" repeatCount="indefinite"/>
+    </g>
+
+    <g opacity="0.8">
+      <line x1="-260" y1="220" x2="-140" y2="135" stroke="url(#meteorStroke)" stroke-width="2.3" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="translate"
+                        values="0 0; 1600 360"
+                        dur="7.4s" begin="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.12;0.62;1" dur="7.4s" begin="2.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g mask="url(#typeMaskTitle)">
+    <text x="600" y="150" text-anchor="middle"
+          font-size="46" font-family="Georgia, serif"
+          fill="#1e1b4b" filter="url(#glow)" letter-spacing="4">
+      YUYAO TANG
+    </text>
+  </g>
+
+  <g mask="url(#typeMaskSub)">
+    <text x="600" y="192" text-anchor="middle"
+          font-size="18" font-family="Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif"
+          fill="#6366f1">
+      M.S. @ Duke ECE • ML Track
+    </text>
+  </g>
+
+  <text x="885" y="150" font-size="30"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
+        fill="#6366f1" opacity="0.9">
+    |
+    <animate attributeName="opacity" values="0;1;0" dur="0.9s" repeatCount="indefinite"/>
+  </text>
+
+  <g opacity="0.55">
+    <circle cx="220" cy="88" r="2.1" fill="#6366f1">
+      <animate attributeName="cy" dur="5s" repeatCount="indefinite" values="90;70;90"/>
+      <animate attributeName="opacity" dur="5s" repeatCount="indefinite" values="0.55;0.22;0.55"/>
+    </circle>
+    <circle cx="980" cy="210" r="2.2" fill="#a5b4fc">
+      <animate attributeName="cx" dur="7s" repeatCount="indefinite" values="980;955;980"/>
+      <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="0.5;0.2;0.5"/>
+    </circle>
+    <circle cx="760" cy="78" r="2.0" fill="#818cf8">
+      <animate attributeName="cx" dur="6.5s" repeatCount="indefinite" values="760;790;760"/>
+      <animate attributeName="opacity" dur="6.5s" repeatCount="indefinite" values="0.45;0.18;0.45"/>
+    </circle>
+  </g>
 </svg>
