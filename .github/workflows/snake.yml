@@ -3,11 +3,11 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"    # every 12 hours
-  workflow_dispatch:          # manual trigger
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
   push:
     branches:
-      - main                  # 每次 push 到 main 分支时自动触发更新
+      - main
 
 jobs:
   generate:
@@ -20,10 +20,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            # Light mode: 靛蓝色贪吃蛇 + 紫色渐变网格
-            dist/github-snake.svg?color_snake=#4f46e5&color_dots=#ebedf0,#e0e7ff,#c7d2fe,#818cf8,#4f46e5
-            # Dark mode: 荧光浅紫贪吃蛇 + 暗夜紫渐变网格
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#a5b4fc&color_dots=#161b22,#312e81,#4338ca,#4f46e5,#6366f1
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
 
       - name: push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
