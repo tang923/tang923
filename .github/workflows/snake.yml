@@ -1,4 +1,4 @@
-name: Generate Snake Neon
+name: Generate Snake Neon Cyberpunk
 
 on:
   schedule:
@@ -16,18 +16,21 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: generate neon snake (svg + gif)
+      - name: generate neon cyberpunk snake (svg + gif)
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            # Light: neon gradient snake + soft glow grid
-            dist/github-snake.svg?color_snake=#00f5ff&color_dots=#ebedf0,#dbeafe,#a5b4fc,#818cf8,#22d3ee
-            dist/github-snake.gif?color_snake=#00f5ff&color_dots=#ebedf0,#dbeafe,#a5b4fc,#818cf8,#22d3ee
+            # ---------- SVG (crisp) ----------
+            # Light: cyan snake + soft neon grid
+            dist/github-snake.svg?color_snake=#00e5ff&color_dots=#ebedf0,#dbeafe,#a5b4fc,#60a5fa,#00e5ff
 
-            # Dark: neon gradient snake + glowing grid on night background
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#00ff9c&color_dots=#0b1020,#111a33,#1b2a57,#3b82f6,#00ff9c
-            dist/github-snake-dark.gif?palette=github-dark&color_snake=#00ff9c&color_dots=#0b1020,#111a33,#1b2a57,#3b82f6,#00ff9c
+            # Dark: neon snake + glowing grid (night cyber)
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#00ff9c&color_dots=#050814,#0b1028,#14204a,#1e40af,#00ff9c
+
+            # ---------- GIF (more "trail-like") ----------
+            # Dark GIF: force a deep background for stronger neon vibe
+            dist/github-snake-dark.gif?palette=github-dark&color_snake=#00ff9c&color_dots=#050814,#0b1028,#14204a,#1e40af,#00ff9c&color_background=#050814
 
       - name: push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
