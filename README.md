@@ -8,16 +8,18 @@
   Actively seeking <b>Summer 2026 Internships</b> and <b>2027 New Grad Roles</b>. <br>
   Always open to connecting, chatting about tech, and learning from each other! <br>
   <br>
-  <i>你好！我是唐雨尧，杜克大学研一在读。<br>目前正在寻找 2026 年暑假实习与 2027 年全职机会。<br>非常欢迎大家跟我 Connect，一起交流讨论、共同进步！</i>
+  <i>你好！我是唐雨尧，杜克大学研一在读。<br>
+  目前正在寻找 2026 年暑假实习与 2027 年全职机会。<br>
+  非常欢迎大家跟我 Connect，一起交流讨论、共同进步！</i>
 </p>
 
 <br>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yuyaotang1)
-&nbsp;
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yuyao.tang@duke.edu)
-&nbsp;
-![Visitors](https://komarev.com/ghpvc/?username=tang923&style=for-the-badge&color=6366f1&label=Visitors)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/yuyaotang1)
+ 
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:yuyao.tang@duke.edu)
+ 
+![Visitors](https://komarev.com/ghpvc/?username=tang923\&style=for-the-badge\&color=6366f1\&label=Visitors)
 
 <br><br>
 
@@ -37,6 +39,7 @@
     <img src="https://skillicons.dev/icons?i=python,pytorch,linux,bash,docker,git&theme=dark" />
   </a>
 </p>
+
 <p>
   <img src="https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white"/>
   <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white"/>
@@ -63,7 +66,17 @@ me.seeking = {
 me.side_quests = [
     "Hunting for Nike Foamposites 👟",
     "Traveling & Road trips 🌍",
-    "Waiting in line for EGR 505 ⏳"
 ]
 
 me.execute()
+```
+
+<div align="center">
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-snake-dark.svg" />
+<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-snake.svg" />
+<img alt="github contribution snake" src="https://raw.githubusercontent.com/tang923/tang923/output/github-snake.svg" />
+</picture>
+
+</div>
