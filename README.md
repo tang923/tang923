@@ -16,7 +16,7 @@
 
 <br><br>
 
-<a href="https://linkedin.com/in/yuyaotang">
+<a href="https://www.linkedin.com/in/yuyaotang1">
   <img src="https://img.shields.io/badge/LinkedIn-glass-ffffff?style=for-the-badge&logo=linkedin&logoColor=6366f1&labelColor=f6f7ff" />
 </a>
 &nbsp;
@@ -42,9 +42,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-contribution-grid-snake.svg" />
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/tang923/tang923/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-snake.svg" />
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/tang923/tang923/output/github-snake.svg" />
 </picture>
 
 </div>
