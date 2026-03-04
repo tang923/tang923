@@ -5,12 +5,14 @@
 <p align="center" style="max-width: 650px; font-size: 16px; line-height: 1.6;">
   👋 <b>Hi, I'm Yuyao Tang (唐雨尧)</b> <br>
   First-year Master's student at Duke University. <br>
-  Actively seeking <b>Summer 2026 Internships</b> and <b>2027 New Grad Roles</b>. <br>
-  Always open to connecting, chatting about tech, and learning from each other! <br>
+  My main focus is on <b>RAG systems, LLM agents, and LLM pretraining & post-training</b>. <br>
+  Actively seeking <b>AI / Algorithm Engineering Internships (Summer 2026)</b> and <b>2027 New Grad Roles</b>. <br>
+  Always open to connecting and discussing AI systems, LLM applications, and research ideas. <br>
   <br>
   <i>你好！我是唐雨尧，杜克大学研一在读。<br>
-  目前正在寻找 2026 年暑假实习与 2027 年全职机会。<br>
-  非常欢迎大家跟我 Connect，一起交流讨论、共同进步！</i>
+  主要研究方向是 <b>RAG 系统、LLM Agent 以及大模型预训练与对齐（Post-training）</b>。<br>
+  目前正在寻找 <b>2026 年算法 / AI 应用开发实习</b> 与 <b>2027 年全职机会</b>。<br>
+  欢迎大家交流 AI 系统、LLM 应用和技术研究。</i>
 </p>
 
 <br>
