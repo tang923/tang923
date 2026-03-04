@@ -73,3 +73,12 @@ me.side_quests = [
 ]
 
 me.execute()
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-snake-dark.svg?v=1" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-snake.svg?v=1" />
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/tang923/tang923/output/github-snake.svg?v=1" />
+</picture>
+
+</div>
