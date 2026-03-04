@@ -16,11 +16,64 @@ Most of my days look like: read a paper, get confused, re-read it, write some co
 
 <br/>
 
+---
+
+<br/>
+
+### ⚡ what i've been building
+
+**[AlignRAG](https://github.com/tang923/AlignRAG)** — domain RAG over arxiv alignment papers  
+&nbsp;&nbsp;&nbsp;&nbsp;`hybrid retrieval` `schema-aware parsing` `agentic reasoning` `eval metrics`
+
+**Mini LLM** — trained a decoder-only transformer from scratch  
+&nbsp;&nbsp;&nbsp;&nbsp;`RoPE` `FlashAttention` `LoRA` `DPO`
+
+**Diffusion Playground** — noise schedule & sampling experiments  
+&nbsp;&nbsp;&nbsp;&nbsp;`EDM preconditioning` `DDIM` `acceleration`
+
+<br/>
+
+---
+
+<br/>
+
 <div align="center">
 
-`python` · `pytorch` · `transformers` · `CUDA` · `docker` · `tmux`
+### 🛠️ stack
+
+<br/>
+
+<img src="https://skillicons.dev/icons?i=python,pytorch,docker,linux,git,vscode&theme=light" />
+
+<br/><br/>
+
+`transformers` · `FAISS` · `CUDA` · `wandb` · `tmux`
 
 </div>
+
+<br/>
+
+---
+
+<br/>
+
+<div align="center">
+
+### 🐍 contributions
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tang923/tang923/output/github-snake.svg" />
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/tang923/tang923/output/github-snake.svg" />
+</picture>
+
+</div>
+
+<br/>
+
+---
 
 <br/>
 
